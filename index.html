@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starfildiberik</title>
+  <meta name="description" content="Bienvenido a Starfildiberik, el sitio web sobre Starfield. Descubre todo sobre este increíble videojuego de ciencia ficción.">
+  
+  <!-- Etiquetas para optimización en motores de búsqueda -->
+  <meta name="keywords" content="Starfield, juego, videojuego, ciencia ficción, Bethesda, RPG">
+  <meta name="author" content="Tu nombre o el nombre de tu empresa">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Etiqueta para hacer que el sitio sea reconocido como una aplicación web -->
+  <link rel="manifest" href="/ruta/al/archivo/manifest.json">
+  
+  <!-- Etiquetas para redes sociales -->
+  <meta property="og:title" content="Starfildiberik">
+  <meta property="og:description" content="Bienvenido a Starfildiberik, el sitio web sobre Starfield. Descubre todo sobre este increíble videojuego de ciencia ficción.">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:url" content="https://www.ejemplo.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="logo.jpg">
+  
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: url('logo.jpg') center/cover fixed;
+      opacity: 0.5;
+    }
+    
+    #header, #footer {
+      width: 100%;
+      height: 50px;
+      background: url('barras.png') repeat-x;
+    }
+    
+    #header {
+      position: fixed;
+      top: 0;
+    }
+    
+    #footer {
+      position: fixed;
+      bottom: 0;
+    }
+    
+    .content {
+      width: 100%;
+      height: calc(100vh - 100px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .content img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+  
+  <div class="content">
+    <img src="barras.png" alt="Starfildiberik" />
+  </div>
+  
+  <div id="footer"></div>
+</body>
+</html>
