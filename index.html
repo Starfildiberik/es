@@ -17,7 +17,7 @@
   <!-- Etiquetas para redes sociales -->
   <meta property="og:title" content="Starfildiberik">
   <meta property="og:description" content="Bienvenido a Starfildiberik, el sitio web sobre Starfield. Descubre todo sobre este increíble videojuego de ciencia ficción.">
-  <meta property="og:image" content="logo.jpg">
+  <meta property="og:image" content="imagen.jpg">
   <meta property="og:url" content="https://www.ejemplo.com">
   
   <!-- Favicon -->
@@ -27,13 +27,13 @@
     body {
       margin: 0;
       overflow: hidden;
-      background: url('logo.jpg') center/cover fixed;
+      background: url('logo.jpg') center/contain fixed no-repeat;
       opacity: 0.5;
     }
     
     #header, #footer {
       width: 100%;
-      height: 50px;
+      height: 100px;
       background: url('barras.png') repeat-x;
     }
     
@@ -59,15 +59,59 @@
       width: 100%;
       height: auto;
     }
+	
+	.buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 5%;
+    }
+    
+    .buttons button {
+      width: 150px;
+      height: 40px;
+    }
+	
+	.social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      background: #f9f9f9;
+    }
+    
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      margin: 6%;
+      cursor: pointer;
+    }
+	
   </style>
 </head>
 <body>
+  
   <div id="header"></div>
   
   <div class="content">
-    <img src="barras.png" alt="Starfildiberik" />
+    <div class="buttons">
+      <button>COUNTDOWN</button>
+      <button>TIENDA</button>
+      <button>WIKI</button>
+      <button>SUBSCRIPCION</button>
+    </div>
   </div>
   
-  <div id="footer"></div>
+  <div class="social-icons">
+    <img src="twitter.png" title="Twitter" onclick="window.open('https://www.twitter.com/')">
+    <img src="facebook.png" title="Facebook" onclick="window.open('https://www.facebook.com/')">
+    <img src="tiktok.png" title="TikTok" onclick="window.open('https://www.tiktok.com/')">
+    <img src="instagram.png" title="Instagram" onclick="window.open('https://www.instagram.com/')">
+    <img src="twitch.png" title="Twitch" onclick="window.open('https://www.twitch.tv/')">
+    <img src="youtube.png" title="YouTube" onclick="window.open('https://www.youtube.com/')">
+    <img src="discord.png" title="Discord" onclick="window.open('https://www.discord.com/')">
+  </div>
+  
 </body>
 </html>
