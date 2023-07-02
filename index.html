@@ -28,7 +28,7 @@
       margin: 0;
       overflow: hidden;
       background: url('logo.jpg') center/contain fixed no-repeat;
-      opacity: 0.5;
+	  font-family: Courier New;
     }
     
     #header, #footer {
@@ -92,6 +92,18 @@
   </style>
 </head>
 <body>
+
+	<script>
+function sendEmail() {
+  var emailAddress = "starfield.iberico@gmail.com";
+  var subject = "Subscripción";
+  var body = "Solicitud de subscripción";
+  
+  var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+  window.open(mailtoLink);
+}
+</script>
   
   <div id="header"></div>
   
@@ -99,19 +111,19 @@
     <div class="buttons">
       <button onclick="window.open('https://oscarpic.github.io/starfieldCountdown/')">COUNTDOWN</button>
       <button onclick="window.location.href='./tienda.html'">TIENDA</button>
-      <button>WIKI</button>
-      <button>SUBSCRIPCION</button>
+      <button onclick="window.open('https://starfield.fandom.com/es/wiki/Starfield')">WIKI</button>
+      <button onclick="sendEmail()">SUBSCRIPCION</button>
     </div>
   </div>
   
   <div class="social-icons">
-    <img src="twitter.png" title="Twitter" onclick="window.open('https://www.twitter.com/')">
-    <img src="facebook.png" title="Facebook" onclick="window.open('https://www.facebook.com/')">
-    <img src="tiktok.png" title="TikTok" onclick="window.open('https://www.tiktok.com/')">
-    <img src="instagram.png" title="Instagram" onclick="window.open('https://www.instagram.com/')">
-    <img src="twitch.png" title="Twitch" onclick="window.open('https://www.twitch.tv/')">
-    <img src="youtube.png" title="YouTube" onclick="window.open('https://www.youtube.com/')">
-    <img src="discord.png" title="Discord" onclick="window.open('https://www.discord.com/')">
+    <img src="twitter.png" title="Twitter" onclick="window.open('https://twitter.com/starfildiberik')">
+    <img src="facebook.png" title="Facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100093972414999')">
+    <img src="tiktok.png" title="TikTok" onclick="window.open('https://www.tiktok.com/@starfildiberik')">
+    <img src="instagram.png" title="Instagram" onclick="window.open('https://www.instagram.com/starfildiberik')">
+    <img src="twitch.png" title="Twitch" onclick="window.open('https://www.twitch.tv/starfildiberik')">
+    <img src="youtube.png" title="YouTube" onclick="window.open('https://www.youtube.com/channel/UC-IrDNVAvbnXESJRRpPgbiA')">
+    <img src="discord.png" title="Discord" onclick="window.open('https://discord.com/users/#7145')">
   </div>
   
 </body>
